@@ -1,7 +1,7 @@
 
 # KafkaMongo
 Docker-compose starting Kafka, Zookeeper, Mongodb, Producer, Consumer and API server<br>
-**Basic Flow**:<br>
+Basic Flow:<br>
 Producer -> Kafka -> Consumer -> API Server -> Mongodb
 
 ## Installation
