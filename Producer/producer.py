@@ -39,7 +39,6 @@ def buy_request():
 def query():
     if request.method == "POST":
         userid = request.form.get("userid")
-        print(userid)
         res = requests.get('http://apiserver:5100/query/{0}'.format(userid))
         return res.text
 
@@ -52,4 +51,4 @@ def query_all():
 
 
 if __name__ == "__main__":
-    app.run(host='0.0.0.0',debug=True,port=5000)
+    app.run(host='0.0.0.0', debug=True, port=5000)

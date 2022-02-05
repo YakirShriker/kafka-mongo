@@ -44,4 +44,4 @@ def add_buy():
 if __name__ == '__main__':
     mongo = pymongo.MongoClient("mongodb://mongorootuser:yakir123@mongodb_container:27017/")
     app.json_encoder = encoder.MyEncoder
-    app.run(host='0.0.0.0',debug=True,port=5100)
+    app.run(host='0.0.0.0', debug=True, port=5100)
