@@ -11,7 +11,7 @@ Producer -> Kafka -> Consumer -> API Server -> Mongodb
    ```
 2. use Docker-compose to start all services 
    ```sh
-   docker-compose start -d
+   docker-compose up -d
    ```
 3. In order see all application logs
    ```sh
