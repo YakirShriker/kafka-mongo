@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/html">
+<head>
+    <meta charset="UTF-8">
+    <title>Ironsource Shop</title>
+</head>
+<header>
+    <h1>Customer Facing Portal</h1>
+</header>
+<body>
+    <header><h2>Produce buy</h2></header>
+    <form action="{{ url_for("buy_request")}}" method="post">
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username" placeholder="username">
+    <label for="userid">UserID:</label>
+    <input type="text" id="userid" name="userid" placeholder="userid">
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" placeholder="price">
+    <button type="submit">Buy now!</button>
+    </form>
+    <header><h2>Query API Server</h2></header>
+    <header><h3>Find By userid</h3></header>
+    <form action="{{ url_for("query")}}" method="post">
+    <label for="userid">UserID:</label>
+    <input type="text" id="userid" name="userid" placeholder="userid">
+    <button type="submit">Query All for this userid!</button>
+    </form>
+
+    <header><h3>Get All!</h3></header>
+    <form action="{{ url_for("query_all")}}" method="post">
+    <button type="submit">Query All!</button>
+    </form>
+</body>
+</html>
