@@ -32,12 +32,12 @@ Producer -> Kafka -> Consumer -> API Server -> Mongodb
   ```
 
    **Post to API Server**<br>
-      ```sh
+      ```
          curl --header "Content-Type: application/json" --request POST  --data '{"username":"xyz","userid":"1","price":"333"}' http://127.0.0.1:5100/buyrequest/
       ```
       
    **Query specific userid from API Server**<br>
-      ```sh
+      ```
       curl -i -X GET http://127.0.0.1:5100/query/1
       ```
       
